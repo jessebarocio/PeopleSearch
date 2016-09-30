@@ -10,13 +10,13 @@ using System.Web.Http;
 namespace PeopleSearch.Controllers
 {
     [RoutePrefix("api/people")]
-    public class PersonApiController : ApiController
+    public class PeopleApiController : ApiController
     {
-        private IPersonRepository _repository;
+        private IPeopleRepository _repository;
 
-        public PersonApiController() { }
+        public PeopleApiController() : this(new EFPeopleRepository()) { }
 
-        public PersonApiController(IPersonRepository repo)
+        public PeopleApiController(IPeopleRepository repo)
         {
             _repository = repo;
         }

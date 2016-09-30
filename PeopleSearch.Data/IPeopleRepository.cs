@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PeopleSearch.Data
 {
-    public interface IPersonRepository
+    public interface IPeopleRepository : IDisposable
     {
         Task<IEnumerable<Person>> SearchByNameAsync(string searchString);
     }

@@ -11,16 +11,16 @@ using System.Threading.Tasks;
 namespace PeopleSearch.Tests
 {
     [TestFixture]
-    class TestPersonApiController
+    class TestPeopleApiController
     {
-        Mock<IPersonRepository> _personRepoMock;
-        PersonApiController _controller;
+        Mock<IPeopleRepository> _peopleRepoMock;
+        PeopleApiController _controller;
 
         [SetUp]
         public void SetUp()
         {
-            _personRepoMock = new Mock<IPersonRepository>();
-            _controller = new PersonApiController(_personRepoMock.Object);
+            _peopleRepoMock = new Mock<IPeopleRepository>();
+            _controller = new PeopleApiController(_peopleRepoMock.Object);
         }
 
         [Test]
@@ -28,13 +28,13 @@ namespace PeopleSearch.Tests
         {
             // Arrange
             string searchString = "this is my search string";
-            _personRepoMock.Setup(p => p.SearchByNameAsync(searchString))
+            _peopleRepoMock.Setup(p => p.SearchByNameAsync(searchString))
                 .ReturnsAsync(new List<Person>())
                 .Verifiable();
             // Act
             var result = await _controller.SearchByNameAsync(searchString);
             // Assert
-            Mock.Verify(_personRepoMock);
+            Mock.Verify(_peopleRepoMock);
         }
     }
 }

@@ -13,6 +13,6 @@ namespace PeopleSearch.Data
         public string LastName { get; set; }
         public string Address { get; set; }
         public int Age { get; set; }
-        public IEnumerable<string> Interests { get; set; }
+        public string Interests { get; set; }
     }
 }
