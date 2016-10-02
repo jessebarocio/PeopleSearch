@@ -11,7 +11,7 @@
     <title>PeopleSearch</title>
     @Styles.Render("~/content/css")
 </head>
-<body>
+<body ng-app="PeopleSearch">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -28,9 +28,13 @@
         </div>
     </div>
     <div class="container-fluid">
-        <h1>Hello World</h1>
+        <ng-view>Hello World</ng-view>
     </div>
     <!-- Library Scripts -->
     @Scripts.Render("~/bundles/libraries")
+
+    <!-- Application Scripts -->
+    @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/controllers")
 </body>
 </html>
