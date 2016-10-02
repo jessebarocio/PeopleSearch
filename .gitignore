@@ -242,3 +242,8 @@ ModelManifest.xml
 .fake/
 
 .todo
+
+
+# TypeScript build output
+PeopleSearch/app/**/*.js
+PeopleSearch/app/**/*.js.map
