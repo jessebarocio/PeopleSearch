@@ -1,0 +1,4 @@
+﻿/* Required for Bootstrap fixed-top navbars */
+body {
+    padding-top: 70px;
+}
