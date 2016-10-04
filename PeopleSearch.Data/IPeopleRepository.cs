@@ -9,5 +9,6 @@ namespace PeopleSearch.Data
     public interface IPeopleRepository : IDisposable
     {
         Task<IEnumerable<Person>> SearchByNameAsync(string searchString);
+        Task<Person> InsertPersonAsync(Person p);
     }
 }

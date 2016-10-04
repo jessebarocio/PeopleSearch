@@ -26,5 +26,11 @@ namespace PeopleSearch.Controllers
         {
             return await _repository.SearchByNameAsync(searchStr);
         }
+
+        [HttpPost, Route("")]
+        public async Task<Person> PostPersonAsync(Person person)
+        {
+            return await _repository.InsertPersonAsync(person);
+        }
     }
 }

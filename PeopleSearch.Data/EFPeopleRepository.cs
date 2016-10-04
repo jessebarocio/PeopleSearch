@@ -22,6 +22,13 @@ namespace PeopleSearch.Data
                 context.People.Where(p => p.FirstName.Contains(searchString) || p.LastName.Contains(searchString)).ToList());
         }
 
+        public async Task<Person> InsertPersonAsync(Person p)
+        {
+            context.People.Add(p);
+            await context.SaveChangesAsync();
+            return p;
+        }
+
         #region IDisposable Implementation
 
         public void Dispose()

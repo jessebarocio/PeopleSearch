@@ -24,7 +24,7 @@ namespace PeopleSearch.Tests
         }
 
         [Test]
-        public async Task SearchByName_PassesSearchParameterToRepository()
+        public async Task SearchByNameAsync_PassesSearchParameterToRepository()
         {
             // Arrange
             string searchString = "this is my search string";
@@ -33,6 +33,20 @@ namespace PeopleSearch.Tests
                 .Verifiable();
             // Act
             var result = await _controller.SearchByNameAsync(searchString);
+            // Assert
+            Mock.Verify(_peopleRepoMock);
+        }
+
+        [Test]
+        public async Task PostPersonAsync_PassesPersonToRepository()
+        {
+            // Arrange
+            var person = new Person();
+            _peopleRepoMock.Setup(p => p.InsertPersonAsync(person))
+                .ReturnsAsync(person)
+                .Verifiable();
+            // Act
+            var result = await _controller.PostPersonAsync(person);
             // Assert
             Mock.Verify(_peopleRepoMock);
         }
