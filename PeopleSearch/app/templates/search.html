@@ -1,29 +1,31 @@
-﻿<div class="row">
-    <div class="col-sm-12">
-        <h4>Enter all or part of a name and click the button to search.</h4>
+﻿<div class="jumbotron">
+    <div class="container">
+        <h1>PeopleSearch</h1>
+        <p>Enter all or part of a name and click the search button to find people.</p>
         <div class="input-group input-group-lg">
             <input type="text" ng-model="vm.searchStr" class="form-control input-lg" placeholder="Search..." />
             <span class="input-group-btn">
-                <button ng-click="vm.search()" ng-disabled="!vm.searchStr" class="btn btn-success" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                <button ng-click="vm.search()" ng-disabled="!vm.searchStr || vm.searching" class="btn btn-success" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
             </span>
         </div>
-        
     </div>
 </div>
-<div class="row" ng-show="vm.showProgress">
-    <div class="col-sm-12 top-buffer">
-        <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                Searching for names matching "{{ vm.searchStr }}"...
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" ng-show="vm.searching">
+            <h3 class="text-center">Searching for people...</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
             </div>
         </div>
-    </div>
-</div>
-<div class="row" ng-show="vm.people">
-    <div class="col-sm-12">
-        <h3>Found {{ vm.people.length }} people!</h3>
-    </div>
-    <div class="col-md-4 col-sm-6 top-buffer" ng-repeat="person in vm.people">
-        <person-info person="person"></person-info>
+        <div class="col-md-12" ng-hide="vm.searching">
+            <div class="col-md-6 col-sm-12" ng-repeat="person in vm.people | orderBy: 'LastName'">
+                <person-info person="person"></person-info>
+            </div>
+            <h3 class="text-center" ng-show="vm.people.length < 1">No results found. Try a different name?</h3>
+        </div>
     </div>
 </div>

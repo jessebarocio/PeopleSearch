@@ -1,10 +1,6 @@
 ﻿/* Required for Bootstrap fixed-top navbars */
 body {
-    padding-top: 70px;
-}
-
-.top-buffer {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .person {
@@ -12,3 +8,8 @@ body {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+    .person .person-photo img {
+        width: 200px;
+        max-height: 200px;
+    }

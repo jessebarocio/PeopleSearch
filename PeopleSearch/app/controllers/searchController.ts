@@ -1,19 +1,21 @@
 ﻿module app.controllers {
 
     class SearchController {
-        showProgress: boolean = false;
+        searching: boolean = false;
         people: app.models.Person[];
         searchStr: string;
 
         search() {
-            // Toggle the progress bar while waiting for result from server
-            this.showProgress = true;
+            // Clear existing search results
+            this.people = [];
+            // This will toggle some sort of UI state indicating a search is in progress
+            this.searching = true;
             this.PeopleService.searchByName(this.searchStr)
                 .then((response) => {
                     // Simulate a 3-second search
                     this.$timeout(3000).then((val) => {
                         // Hide the progress bar
-                        this.showProgress = false;
+                        this.searching = false;
                         this.people = response.data;
                     });
                 });
