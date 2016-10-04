@@ -13,7 +13,7 @@
 </head>
 <body ng-app="PeopleSearch">
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -23,11 +23,14 @@
                 <a href="/" class="navbar-brand">PeopleSearch</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="#/search">Search</a></li>
+                    <li><a href="#/add">Add Person</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <ng-view>Hello World</ng-view>
     </div>
     <!-- Library Scripts -->
@@ -35,6 +38,9 @@
 
     <!-- Application Scripts -->
     @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/models")
+    @Scripts.Render("~/bundles/services")
+    @Scripts.Render("~/bundles/directives")
     @Scripts.Render("~/bundles/controllers")
 </body>
 </html>

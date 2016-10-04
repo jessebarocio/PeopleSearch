@@ -1,6 +1,6 @@
 ﻿module app {
     // The main module - responsible for loading the entire application
-    var main = angular.module("PeopleSearch", ["ngRoute"]);
+    var main = angular.module("PeopleSearch", ["ngRoute", "app.services", "app.directives"]);
     main.config(routeConfig);
 
     routeConfig.$inject = ["$routeProvider"];

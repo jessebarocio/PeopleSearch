@@ -2,3 +2,13 @@
 body {
     padding-top: 70px;
 }
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+.person {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+}
