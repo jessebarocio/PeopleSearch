@@ -1,352 +1,72 @@
 ﻿[
     {
-        "FirstName": "Haefner",
-        "LastName": "Diamond",
-        "Address": "7993 Clark Street, Jacksonville Beach, FL 32250",
+        "FirstName": "Dwayne",
+        "LastName": "Lefevre",
+        "Address": "7993 Clark Street",
+        "City": "Jacksonville Beach",
+        "State": "FL",
+        "Zip": "32250",
         "Age": 40,
-        "Interests": ""
+        "Interests": "Amateur radio, photography"
     },
     {
-        "FirstName": "Finck",
-        "LastName": "Sulio",
-        "Address": "1 Deerfield Court, Bedford, OH 44146",
+        "FirstName": "Lin",
+        "LastName": "Dawkins",
+        "Address": "1 Deerfield Court",
+        "City": "Bedford",
+        "State": "OH",
+        "Zip": "44146",
         "Age": 76,
-        "Interests": ""
+        "Interests": "Reading, poetry, gardening"
     },
     {
-        "FirstName": "Stagg",
-        "LastName": "Umeko",
-        "Address": "9348 Schoolhouse St., Ozone Park, NY 11417",
+        "FirstName": "Jimmy",
+        "LastName": "Barker",
+        "Address": "9348 Schoolhouse St.",
+        "City": "Ozone Park",
+        "State": "NV",
+        "Zip": "11417",
         "Age": 32,
-        "Interests": ""
+        "Interests": "Electronics, exercising, hiking, camping"
     },
     {
-        "FirstName": "Banks",
-        "LastName": "Austin",
-        "Address": "8734 College Avenue, Summerville, SC 29483",
+        "FirstName": "Meridith",
+        "LastName": "Serio",
+        "Address": "8734 College Avenue",
+        "City": "Summerville",
+        "State": "SC",
+        "Zip": "29483",
         "Age": 71,
-        "Interests": ""
+        "Interests": "Painting, art, art history"
     },
     {
-        "FirstName": "Delamora",
-        "LastName": "Ioannes",
-        "Address": "341 Ridgewood Ave., Bethel Park, PA 15102",
+        "FirstName": "Trevor",
+        "LastName": "Wendel",
+        "Address": "341 Ridgewood Ave.",
+        "City": "Bethel Park",
+        "State": "PA",
+        "Zip": "15102",
         "Age": 79,
-        "Interests": ""
+        "Interests": "Fishing"
     },
     {
-        "FirstName": "Maggio",
-        "LastName": "Jordana",
-        "Address": "8879 North Miller Avenue, Alliance, OH 44601",
-        "Age": 39,
-        "Interests": ""
+        "FirstName": "Viki",
+        "LastName": "Smith",
+        "Address": "8879 North Miller Avenue",
+        "City": "Alliance",
+        "State": "OH",
+        "Zip": "44601",
+        "Age": 22,
+        "Interests": "Politics, activism, volunteering"
     },
     {
-        "FirstName": "Tennyson",
-        "LastName": "Urvasi",
-        "Address": "9930 Woodsman Street, Trumbull, CT 06611",
+        "FirstName": "Bobbie",
+        "LastName": "Lancaster",
+        "Address": "9930 Woodsman Street",
+        "City": "Trumbull",
+        "State": "CT",
+        "Zip": "06611",
         "Age": 49,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Brazeal",
-        "LastName": "Marty",
-        "Address": "12 Piper Street, Westmont, IL 60559",
-        "Age": 36,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Dee",
-        "LastName": "Tegwen",
-        "Address": "19 San Juan Court, Hamilton, OH 45011",
-        "Age": 74,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Epstein",
-        "LastName": "Marquita",
-        "Address": "587 Mill St., Tullahoma, TN 37388",
-        "Age": 69,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Tonkin",
-        "LastName": "Atalanta",
-        "Address": "17 Lyme St., New Britain, CT 06051",
-        "Age": 69,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Egan",
-        "LastName": "Srinath",
-        "Address": "7912 Blue Spring St., Unit 697, Natchez, MS 39120",
-        "Age": 67,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Scheck",
-        "LastName": "Niju",
-        "Address": "24 Taylor St., Natchez, MS 39120",
-        "Age": 73,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Deleon",
-        "LastName": "Mairin",
-        "Address": "408 Oklahoma St., Covington, GA 30014",
-        "Age": 55,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Hartness",
-        "LastName": "Faraji",
-        "Address": "292 Edgefield Avenue, Dracut, MA 01826",
-        "Age": 47,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Lampe",
-        "LastName": "Naeem",
-        "Address": "8939 Golden Star Court, Fort Wayne, IN 46804",
-        "Age": 55,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Kuo",
-        "LastName": "Dian",
-        "Address": "25 Oakland Street, Lorain, OH 44052",
-        "Age": 29,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Iniguez",
-        "LastName": "Marty",
-        "Address": "701 Border Ave., Moncks Corner, SC 29461",
-        "Age": 62,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Salmons",
-        "LastName": "Crescent",
-        "Address": "8556 Glenwood Rd., Potomac, MD 20854",
-        "Age": 44,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Ferrin",
-        "LastName": "Rilla",
-        "Address": "8600 Griffin Drive, New Lenox, IL 60451",
-        "Age": 64,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Thibodaux",
-        "LastName": "Ormond",
-        "Address": "69 Shady Ave., Patchogue, NY 11772",
-        "Age": 68,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Boersma",
-        "LastName": "Tangwyn",
-        "Address": "38 SE. Manchester St., Loveland, OH 45140",
-        "Age": 71,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Recker",
-        "LastName": "Ivan",
-        "Address": "7 Parker Street, West Islip, NY 11795",
-        "Age": 61,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Classen",
-        "LastName": "Ilse",
-        "Address": "9 Dunbar Street, Maspeth, NY 11378",
-        "Age": 29,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Tonkin",
-        "LastName": "Narayan",
-        "Address": "67 East High St., Valparaiso, IN 46383",
-        "Age": 64,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Kittrell",
-        "LastName": "Kyeema",
-        "Address": "8601 Parker Court, Salem, MA 01970",
-        "Age": 38,
-        "Interests": ""
-    },
-    {
-        "FirstName": "League",
-        "LastName": "Percival",
-        "Address": "483 Rockland Dr.,Eugene, OR 97402",
-        "Age": 19,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Trapani",
-        "LastName": "Utz",
-        "Address": "137 Carpenter Ave., Chapel Hill, NC 27516",
-        "Age": 76,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Scalf",
-        "LastName": "Ilana",
-        "Address": "7188 Lexington Street, Howard Beach, NY 11414",
-        "Age": 63,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Brunton",
-        "LastName": "Sheridan",
-        "Address": "8099 North Newcastle Dr., South Richmond Hill, NY 11419",
-        "Age": 25,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Winans",
-        "LastName": "Crisiant",
-        "Address": "7375 William Lane, Port Richey, FL 34668",
-        "Age": 76,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Crist",
-        "LastName": "Rolando",
-        "Address": "82 Edgefield St., Oak Forest, IL 60452",
-        "Age": 65,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Ceasar",
-        "LastName": "Eva",
-        "Address": "692 N. Jones Court, Huntley, IL 60142",
-        "Age": 18,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Trapani",
-        "LastName": "Didrika",
-        "Address": "8509 Swanson Street, Yorktown Heights, NY 10598",
-        "Age": 31,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Fortson",
-        "LastName": "Ranjan",
-        "Address": "856 Bedford Ave., Douglasville, GA 30134",
-        "Age": 73,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Sinclair",
-        "LastName": "Kakra",
-        "Address": "959 Jefferson Court, Manchester, NH 03102",
-        "Age": 73,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Rosemond",
-        "LastName": "Ludvig",
-        "Address": "468 W. Gartner Drive, Garden City, NY 11530",
-        "Age": 57,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Ropp",
-        "LastName": "Vaisakhi",
-        "Address": "772 Greenrose Drive, Bellmore, NY 11710",
-        "Age": 41,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Wiese",
-        "LastName": "Gulara",
-        "Address": "2 Selby St., Georgetown, SC 29440",
-        "Age": 74,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Bloodworth",
-        "LastName": "Mahon",
-        "Address": "30 Adams Ave., Grand Forks, ND 58201",
-        "Age": 38,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Higginbotham",
-        "LastName": "Caine",
-        "Address": "75 Pennsylvania Dr., Jersey City, NJ 07302",
-        "Age": 53,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Kayser",
-        "LastName": "Carmelita",
-        "Address": "8805 Edgefield St., Georgetown, SC 29440",
-        "Age": 70,
-        "Interests": ""
-    },
-    {
-        "FirstName": "McCarthy",
-        "LastName": "Manavendra",
-        "Address": "36 3rd St., Hazleton, PA 18201",
-        "Age": 48,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Schiffman",
-        "LastName": "Elia",
-        "Address": "568 E. Joy Ridge Court, La Vergne, TN 37086",
-        "Age": 69,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Sinclair",
-        "LastName": "Paxton",
-        "Address": "21 Lakewood Street, Port Washington, NY 11050",
-        "Age": 52,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Collum",
-        "LastName": "Creighton",
-        "Address": "77 Briarwood Ave., Cordova, TN 38016",
-        "Age": 57,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Lacey",
-        "LastName": "Evita",
-        "Address": "384 Grant Ave., Pawtucket, RI 02860",
-        "Age": 25,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Ferrin",
-        "LastName": "Osborne",
-        "Address": "834 Homestead Drive, Lakewood, NJ 08701",
-        "Age": 74,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Lu",
-        "LastName": "Amaroo",
-        "Address": "834 East Dogwood Ave., Augusta, GA 30906",
-        "Age": 71,
-        "Interests": ""
-    },
-    {
-        "FirstName": "Patt",
-        "LastName": "Josh",
-        "Address": "3 Shady Ave., Palatine, IL 60067",
-        "Age": 63,
-        "Interests": ""
+        "Interests": "Web design, programming, gaming"
     }
 ]
