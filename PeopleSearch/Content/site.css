@@ -1,6 +1,11 @@
 ﻿/* Required for Bootstrap fixed-top navbars */
 body {
-    padding-top: 20px;
+    padding-top: 70px;
+}
+
+/* Offset navbar padding for Jumbotrons. */
+.jumbotron {
+    margin-top: -50px;
 }
 
 .person {

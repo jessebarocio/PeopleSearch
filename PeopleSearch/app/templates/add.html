@@ -1,1 +1,66 @@
-﻿
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Add Person</h3>
+            <p>Enter the details and click <strong>Add Person</strong> to save them to the database.</p>
+            <div class="alert alert-danger" role="alert" ng-show="vm.error">
+                <p>Couldn't save person. Make sure you've entered valid information and try again.</p>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="vm.person.FirstName" class="form-control" id="firstName" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="vm.person.LastName" class="form-control" id="lastName" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="col-sm-3 control-label">Address</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="vm.person.Address" class="form-control" id="address" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city" class="col-sm-3 control-label">City</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="vm.person.City" class="form-control" id="city" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="state" class="col-sm-3 control-label">State</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="vm.person.State" class="form-control" id="state" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="zip" class="col-sm-3 control-label">Zip</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="vm.person.Zip" class="form-control" id="zip" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="age" class="col-sm-3 control-label">Age</label>
+                    <div class="col-sm-9">
+                        <input type="number" ng-model="vm.person.Age" min="0" class="form-control" id="age" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="interests" class="col-sm-3 control-label">Interests</label>
+                    <div class="col-sm-9">
+                        <textarea ng-model="vm.person.Interests" class="form-control" id="interests" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="submit" ng-click="vm.savePerson()" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Add Person</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

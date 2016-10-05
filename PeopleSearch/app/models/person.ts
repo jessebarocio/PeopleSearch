@@ -1,6 +1,6 @@
 ﻿module app.models {
 
-    export interface Person {
+    export class Person {
         PersonId: number;
         FirstName: string;
         LastName: string;
