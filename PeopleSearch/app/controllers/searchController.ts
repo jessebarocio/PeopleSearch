@@ -7,8 +7,9 @@
         searchStr: string;
 
         search() {
-            // Clear existing search results
+            // Clear existing search results and errors
             this.people = [];
+            this.error = false;
             // This will toggle some sort of UI state indicating a search is in progress
             this.searching = true;
             this.PeopleService.searchByName(this.searchStr)

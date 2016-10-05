@@ -3,6 +3,7 @@
     class AddController {
         error: boolean = false;
         person: app.models.Person = new app.models.Person();
+        photo: File;
 
         savePerson() {
             debugger;

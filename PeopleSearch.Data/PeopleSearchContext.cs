@@ -18,5 +18,6 @@ namespace PeopleSearch.Data
         }
 
         public DbSet<Person> People { get; set; }
+        public DbSet<Photo> Photos { get; set; }
     }
 }

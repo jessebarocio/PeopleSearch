@@ -16,6 +16,12 @@ namespace PeopleSearch.Data
         {
             foreach (var person in GetSeedData())
             {
+                person.Photo = new Photo()
+                {
+                    ContentType = "image/png",
+                    Data = GetEmbeddedResourceBytes(
+                        String.Format("PeopleSearch.Data.SeedData.{0}-{1}.png", person.FirstName, person.LastName))
+                };
                 context.People.Add(person);
             }
             context.SaveChanges();
@@ -25,15 +31,25 @@ namespace PeopleSearch.Data
         private IEnumerable<Person> GetSeedData()
         {
             return JsonConvert.DeserializeObject<IEnumerable<Person>>(
-                GetEmbeddedResourceString("PeopleSearch.Data.SeedData.json"));
+                GetEmbeddedResourceString("PeopleSearch.Data.SeedData.People.json"));
         }
 
-        public static string GetEmbeddedResourceString(string resourceName)
+        private static string GetEmbeddedResourceString(string resourceName)
         {
             using (Stream s = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
             using (StreamReader sr = new StreamReader(s))
             {
                 return sr.ReadToEnd();
+            }
+        }
+
+        private static byte[] GetEmbeddedResourceBytes(string resourceName)
+        {
+            using (Stream s = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
+            using (MemoryStream ms = new MemoryStream())
+            {
+                s.CopyTo(ms);
+                return ms.ToArray();
             }
         }
     }

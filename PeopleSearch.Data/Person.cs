@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,5 +22,9 @@ namespace PeopleSearch.Data
         [Range(0, 150, ErrorMessage = "Please enter a valid age.")]
         public int Age { get; set; }
         public string Interests { get; set; }
+        public int? PhotoId { get; set; }
+
+        [ForeignKey("PhotoId")]
+        public virtual Photo Photo { get; set; }
     }
 }

@@ -58,12 +58,22 @@
     <Compile Include="IPeopleRepository.cs" />
     <Compile Include="PeopleSearchContext.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="Photo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <EmbeddedResource Include="SeedData.json" />
+    <EmbeddedResource Include="SeedData\People.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SeedData\Bobbie-Lancaster.png" />
+    <EmbeddedResource Include="SeedData\Dwayne-Lefevre.png" />
+    <EmbeddedResource Include="SeedData\Jimmy-Barker.png" />
+    <EmbeddedResource Include="SeedData\Lin-Dawkins.png" />
+    <EmbeddedResource Include="SeedData\Meridith-Serio.png" />
+    <EmbeddedResource Include="SeedData\Trevor-Wendel.png" />
+    <EmbeddedResource Include="SeedData\Viki-Smith.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

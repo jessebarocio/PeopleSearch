@@ -16,7 +16,7 @@
         "City": "Bedford",
         "State": "OH",
         "Zip": "44146",
-        "Age": 76,
+        "Age": 31,
         "Interests": "Reading, poetry, gardening"
     },
     {
@@ -36,7 +36,7 @@
         "City": "Summerville",
         "State": "SC",
         "Zip": "29483",
-        "Age": 71,
+        "Age": 26,
         "Interests": "Painting, art, art history"
     },
     {
@@ -46,7 +46,7 @@
         "City": "Bethel Park",
         "State": "PA",
         "Zip": "15102",
-        "Age": 79,
+        "Age": 27,
         "Interests": "Fishing"
     },
     {
@@ -66,7 +66,7 @@
         "City": "Trumbull",
         "State": "CT",
         "Zip": "06611",
-        "Age": 49,
+        "Age": 36,
         "Interests": "Web design, programming, gaming"
     }
 ]
