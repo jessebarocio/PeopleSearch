@@ -14,6 +14,7 @@ namespace PeopleSearch.Data
     {
         public PeopleSearchContext() : base("name=PeopleSearchContext")
         {
+            // Register initializer which will create the database and seed data if it does not exist.
             Database.SetInitializer(new CreateAndSeedDatabaseIfNotExists());
         }
 

@@ -55,7 +55,9 @@
   <ItemGroup>
     <Compile Include="CreateAndSeedDatabaseIfNotExists.cs" />
     <Compile Include="EFPeopleRepository.cs" />
+    <Compile Include="EFPhotoRepository.cs" />
     <Compile Include="IPeopleRepository.cs" />
+    <Compile Include="IPhotoRepository.cs" />
     <Compile Include="PeopleSearchContext.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Photo.cs" />

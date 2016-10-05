@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -23,8 +24,5 @@ namespace PeopleSearch.Data
         public int Age { get; set; }
         public string Interests { get; set; }
         public int? PhotoId { get; set; }
-
-        [ForeignKey("PhotoId")]
-        public virtual Photo Photo { get; set; }
     }
 }

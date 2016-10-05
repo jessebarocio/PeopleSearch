@@ -3,7 +3,7 @@ body {
     padding-top: 70px;
 }
 
-/* Offset navbar padding for Jumbotrons. */
+/* Offset navbar padding for Jumbotrons. They don't need so much. */
 .jumbotron {
     margin-top: -50px;
 }

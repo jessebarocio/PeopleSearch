@@ -1,12 +1,12 @@
 ﻿module app.controllers {
 
     class AddController {
+        // UI state
         error: boolean = false;
+        // Data
         person: app.models.Person = new app.models.Person();
-        photo: File;
 
         savePerson() {
-            debugger;
             this.PeopleService.addPerson(this.person)
                 .then((response) => {
                     window.location.hash = "/search";

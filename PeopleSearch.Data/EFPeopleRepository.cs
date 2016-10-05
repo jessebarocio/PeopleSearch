@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PeopleSearch.Data
 {
+    /// <summary>
+    /// An EntityFramework implementation of IPeopleRepository.
+    /// </summary>
     public class EFPeopleRepository : IPeopleRepository
     {
         PeopleSearchContext context;
@@ -17,9 +20,10 @@ namespace PeopleSearch.Data
 
         public Task<IEnumerable<Person>> SearchByNameAsync(string searchString)
         {
-            // EF6 still doesn't support async queries. Wrap the result in a Task since the interface is expecting it.
+            // EF6 still doesn't support async queries. Wrap the result in a Task since the interface requires it.
             return Task.FromResult<IEnumerable<Person>>(
-                context.People.Where(p => p.FirstName.Contains(searchString) || p.LastName.Contains(searchString)).ToList());
+                context.People.Where(p => p.FirstName.Contains(searchString) || p.LastName.Contains(searchString))
+                    .ToList());
         }
 
         public async Task<Person> InsertPersonAsync(Person p)
@@ -27,6 +31,11 @@ namespace PeopleSearch.Data
             context.People.Add(p);
             await context.SaveChangesAsync();
             return p;
+        }
+
+        public Task<Person> GetPersonAsync(int id)
+        {
+            return context.People.FindAsync(id);
         }
 
         #region IDisposable Implementation
@@ -47,7 +56,6 @@ namespace PeopleSearch.Data
                     context = null;
                 }
             }
-
         }
 
         #endregion

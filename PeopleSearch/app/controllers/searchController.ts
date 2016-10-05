@@ -1,8 +1,10 @@
 ﻿module app.controllers {
 
     class SearchController {
+        // UI state
         searching: boolean = false;
         error: boolean = false;
+        // Data
         people: app.models.Person[];
         searchStr: string;
 
@@ -10,7 +12,7 @@
             // Clear existing search results and errors
             this.people = [];
             this.error = false;
-            // This will toggle some sort of UI state indicating a search is in progress
+            // This will toggle something on the UI indicating a search is in progress
             this.searching = true;
             this.PeopleService.searchByName(this.searchStr)
                 .then((response) => {
